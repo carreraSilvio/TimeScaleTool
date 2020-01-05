@@ -1,0 +1,18 @@
+{
+  "name": "com.brightlib.playspeed"
+  "version": "1.0.0",
+  "displayName": "Play Speed",
+  "description": "Easily change the time scale during play session. Good for debugging and making videos.",
+  "unity": "2018.3",
+  "unityRelease": "6f1",
+  "keywords": [
+    "Play",
+    "TimeScale",
+    "Speed",
+    "Time"
+  ],
+  "author": {
+    "name": "Silvio Carréra",
+    "url": "https://bitbucket.org/carreraSilvio/"
+  }
+}
