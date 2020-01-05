@@ -1,5 +1,5 @@
 {
-  "name": "com.brightlib.playspeed"
+  "name": "com.brightlib.playspeed",
   "version": "1.0.0",
   "displayName": "Play Speed",
   "description": "Easily change the time scale during play session. Good for debugging and making videos.",
@@ -12,7 +12,7 @@
     "Time"
   ],
   "author": {
-    "name": "Silvio CarrÃ©ra",
+    "name": "Silvio Carréra",
     "url": "https://bitbucket.org/carreraSilvio/"
   }
 }
