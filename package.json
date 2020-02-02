@@ -1,5 +1,5 @@
 {
-  "name": "com.brightlib.playspeedtool"
+  "name": "com.brightlib.playspeedtool",
   "version": "1.0.0",
   "displayName": "Package Example",
   "description": "Let's you control the play speed of the game. Helps with debuging and making videos.",
