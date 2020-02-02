@@ -47,14 +47,17 @@ namespace BrightLib.PlaySpeedTool
             EndGreyedOutArea();
         }
 
-        private void ChangeTimeScale(float timeScaleChange)
+        private void ChangeTimeScale(float timeScaleDiff)
         {
-            Time.timeScale += timeScaleChange;
+            var timeScale = Time.timeScale;
+            timeScale += timeScaleDiff;
+            timeScale = Mathf.Max(0f, timeScale);
+            Time.timeScale = timeScale;
         }
 
         private void SetTimeScale(float timeScale)
         {
-            Time.timeScale = Mathf.Max(0f, timeScale);
+            Time.timeScale = timeScale;
         }
 
         public void DrawLabelBold(string text)
