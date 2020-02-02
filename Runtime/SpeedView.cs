@@ -54,7 +54,7 @@ namespace BrightLib.PlaySpeedTool
 
         private void SetTimeScale(float timeScale)
         {
-            Time.timeScale = timeScale;
+            Time.timeScale = Mathf.Max(0f, timeScale);
         }
 
         public void DrawLabelBold(string text)
