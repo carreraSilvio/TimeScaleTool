@@ -3,7 +3,7 @@ using UnityEditor;
 
 namespace BrightLib.PlaySpeedTool
 {
-    public class SpeedView : EditorWindow
+    public class PlaySpeedWindow : EditorWindow
     {
         #region MenuItem
 

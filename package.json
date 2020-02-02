@@ -1,18 +1,12 @@
 {
-  "name": "com.brightlib.playspeed",
+  "name": "com.brightlib.playspeedtool"
   "version": "1.0.0",
-  "displayName": "Play Speed",
-  "description": "Easily change the time scale during play session. Good for debugging and making videos.",
-  "unity": "2018.3",
-  "unityRelease": "6f1",
-  "keywords": [
-    "Play",
-    "TimeScale",
-    "Speed",
-    "Time"
-  ],
+  "displayName": "Package Example",
+  "description": "Let's you control the play speed of the game. Helps with debuging and making videos.",
+  "unity": "2019.2",
+  "unityRelease": "15f1",
   "author": {
-    "name": "Silvio Carrera",
+    "name": "Silvio Carréra",
     "url": "https://bitbucket.org/carreraSilvio/"
   }
 }
