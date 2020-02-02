@@ -1,6 +1,6 @@
 {
   "name": "com.brightlib.playspeedtool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Play Speed",
   "description": "Let's you control the play speed of the game. Helps with debuging and making videos.",
   "unity": "2019.2",
