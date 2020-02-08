@@ -18,7 +18,6 @@ namespace BrightLib.PlaySpeedTool
 
         #endregion
 
-
         private void OnGUI()
         {
             StartGreyedOutArea(Application.isPlaying);

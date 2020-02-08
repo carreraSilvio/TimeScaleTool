@@ -2,8 +2,8 @@
   "name": "com.brightlib.playspeedtool",
   "version": "1.0.1",
   "displayName": "Play Speed",
-  "description": "Let's you control the play speed of the game. Helps with debuging and making videos.",
-  "unity": "2019.2",
+  "description": "Allows you to alter the time scale of the game with ease.",
+  "unity": "2018.2",
   "unityRelease": "15f1",
   "author": {
     "name": "Silvio Carréra",
