@@ -24,7 +24,7 @@ namespace BrightLib.PlaySpeedTool
 
             EditorGUILayout.BeginVertical();
             {
-                DrawLabelBold($"Time Scale is : {Time.timeScale}");
+                DrawLabelBold($"Time Scale is : {Time.timeScale.ToString("0.00")}");
                 EditorGUILayout.BeginHorizontal();
                 {
                     if (DrawButton("<<", width: 25f)) ChangeTimeScale(-0.25f);
@@ -32,12 +32,6 @@ namespace BrightLib.PlaySpeedTool
                     if (DrawButton('\u25B6'.ToString(), width: 40f)) SetTimeScale(1f);
                     if (DrawButton(">", width: 25f)) ChangeTimeScale(0.1f);
                     if (DrawButton(">>", width: 25f)) ChangeTimeScale(0.25f);
-
-                    //if (DrawButton("-0.25x", width: 50f)) ChangeTimeScale(-0.25f);
-                    //if (DrawButton("-0.1x", width: 50f)) ChangeTimeScale(-0.1f);
-                    //if (DrawButton("1", width: 60f)) SetTimeScale(1f);
-                    //if (DrawButton("+0.1x", width: 50f)) ChangeTimeScale(0.1f);
-                    //if (DrawButton("+0.25x", width: 50f)) ChangeTimeScale(0.25f);
                 }
                 EditorGUILayout.EndHorizontal();
             }
