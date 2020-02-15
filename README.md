@@ -1,6 +1,8 @@
 # Play Speed Tool
 Allows you to alter the time scale of the game with ease.
 
+![Imgur2](https://i.imgur.com/9QZj5uc.gif)
+
 ## Prerequisites
 Unity 2018.3 and up
 
@@ -25,6 +27,3 @@ Unity 2018.3 and up
 2. Start your game
 3. Use the left and right arrow buttons to increase or decrease the time scale
 4. Use the center button to reset the time scale back to 1
-
-## Previews
-![Imgur2](https://i.imgur.com/9QZj5uc.gif)
