@@ -27,4 +27,4 @@ Unity 2018.3 and up
 4. Use the center button to reset the time scale back to 1
 
 ## Previews
-![Imgur](https://i.imgur.com/9QZj5uc.gifv)
+![Imgur2](https://i.imgur.com/9QZj5uc.gif)
