@@ -17,7 +17,7 @@ Unity 2018.3 and up
 
 		{
     		"dependencies": {
-        		"com.brightlib.playspeed": "https://github.com/carreraSilvio/tool_playspeed.git"
+        		"com.brightlib.playspeed": "https://github.com/carreraSilvio/playSpeedTool.git"
     		}
 		}
 
