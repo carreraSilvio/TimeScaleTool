@@ -1,22 +1,29 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using System;
 
 namespace BrightLib.PlaySpeedTool
 {
     public class PlaySpeedWindow : EditorWindow
     {
-        #region MenuItem
+        public Action<float> onChangeClick;
+        public Action<float> onResetClick;
 
-        private const string WINDOW_TITLE = "Play Speed";
-        private const bool WINDOW_UTILITY = false;
+        private PlaySpeedController _controller;
 
-        [MenuItem("Tools/" + WINDOW_TITLE)]
-        public static void ShowWindow()
+        private void OnEnable()
         {
-            GetWindow<PlaySpeedWindow>(WINDOW_UTILITY, WINDOW_TITLE);
+            _controller = new PlaySpeedController();
+            onChangeClick = _controller.ChangeTimeScale;
+            onResetClick = _controller.SetTimeScale;
         }
 
-        #endregion
+        private void OnDisable()
+        {
+            onChangeClick = null;
+            onResetClick = null;
+        }
+
 
         private void OnGUI()
         {
@@ -27,11 +34,16 @@ namespace BrightLib.PlaySpeedTool
                 DrawLabelBold($"Time Scale is : {Time.timeScale.ToString("0.00")}");
                 EditorGUILayout.BeginHorizontal();
                 {
-                    if (DrawButton("<<", width: 25f)) ChangeTimeScale(-0.25f);
-                    if (DrawButton("<", width: 25f)) ChangeTimeScale(-0.1f);
-                    if (DrawButton('\u25B6'.ToString(), width: 40f)) SetTimeScale(1f);
-                    if (DrawButton(">", width: 25f)) ChangeTimeScale(0.1f);
-                    if (DrawButton(">>", width: 25f)) ChangeTimeScale(0.25f);
+                    if (DrawButton("<<", width: 25f)) onChangeClick.Invoke(-0.25f);
+                    if (DrawButton("<", width: 25f)) onChangeClick.Invoke(-0.1f);
+
+                    StartGreyedOutArea(Time.timeScale != 1);
+                    if (DrawButton("1", width: 40f)) onResetClick.Invoke(1f);
+                    EndGreyedOutArea();
+
+                    StartGreyedOutArea(Application.isPlaying);
+                    if (DrawButton(">", width: 25f)) onChangeClick.Invoke(+0.1f);
+                    if (DrawButton(">>", width: 25f)) onChangeClick.Invoke(+0.25f);
                 }
                 EditorGUILayout.EndHorizontal();
             }
@@ -40,18 +52,7 @@ namespace BrightLib.PlaySpeedTool
             EndGreyedOutArea();
         }
 
-        private void ChangeTimeScale(float timeScaleDiff)
-        {
-            var timeScale = Time.timeScale;
-            timeScale += timeScaleDiff;
-            timeScale = Mathf.Max(0f, timeScale);
-            Time.timeScale = timeScale;
-        }
-
-        private void SetTimeScale(float timeScale)
-        {
-            Time.timeScale = timeScale;
-        }
+        
 
         public void DrawLabelBold(string text)
         {
