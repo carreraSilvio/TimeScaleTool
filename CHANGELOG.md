@@ -1,12 +1,17 @@
+## [1.1.0] - 2020-03-30
+
+### New
+- Separated controller and view
+- Changed from 'PLAY icon' to '1'
+
 ## [1.0.2] - 2020-02-22
 
-### Fixed
+### Fix
 - Moved from runtime to editor folder.
-
 
 ## [1.0.1] -
 
-### Fixed
+### Fix
 - Timescale less than 0 error.
 
 ## [1.0.0] -

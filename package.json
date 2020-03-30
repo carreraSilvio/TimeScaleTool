@@ -1,12 +1,13 @@
 {
   "name": "com.brightlib.playspeedtool",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "displayName": "Play Speed",
   "description": "Allows you to alter the time scale of the game with ease.",
   "unity": "2018.2",
   "unityRelease": "15f1",
-  "author": {
+  "author": 
+  {
     "name": "Silvio Carréra",
-    "url": "https://bitbucket.org/carreraSilvio/tool_playspeed"
+    "url": "https://bitbucket.org/carreraSilvio/playspeedtool"
   }
 }
