@@ -36,12 +36,9 @@ namespace BrightLib.PlaySpeedTool
                 {
                     if (DrawButton("<<", width: 25f)) onChangeClick.Invoke(-0.25f);
                     if (DrawButton("<", width: 25f)) onChangeClick.Invoke(-0.1f);
-
-                    StartGreyedOutArea(Time.timeScale != 1);
+                   
                     if (DrawButton("1", width: 40f)) onResetClick.Invoke(1f);
-                    EndGreyedOutArea();
-
-                    StartGreyedOutArea(Application.isPlaying);
+                    
                     if (DrawButton(">", width: 25f)) onChangeClick.Invoke(+0.1f);
                     if (DrawButton(">>", width: 25f)) onChangeClick.Invoke(+0.25f);
                 }

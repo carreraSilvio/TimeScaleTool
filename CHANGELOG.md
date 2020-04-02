@@ -1,3 +1,8 @@
+## [1.1.1] - 2020-04-02
+
+### Fix
+- Small tweak to buttons disable behaviour
+
 ## [1.1.0] - 2020-03-30
 
 ### New
