@@ -1,4 +1,4 @@
-# Play Speed Tool
+# Time Scale Tool
 Allows you to alter the time scale of the game with ease.
 
 ![Imgur2](https://i.imgur.com/9QZj5uc.gif)
@@ -16,14 +16,15 @@ Unity 2018.3 and up
 * Open the manifest and manually add
 
 		{
-    		"dependencies": {
-        		"com.brightlib.playspeed": "https://github.com/carreraSilvio/playSpeedTool.git"
+    		"dependencies": 
+            {
+        		"com.brightlib.timescale": "https://github.com/carreraSilvio/timeScaleTool.git"
     		}
 		}
 
 
 ## Usage
-1. Go to Tools/PlaySpeed
+1. Go to Tools/TimeScale
 2. Start your game
 3. Use the left and right arrow buttons to increase or decrease the time scale
 4. Use the center button to reset the time scale back to 1

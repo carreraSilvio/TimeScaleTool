@@ -1,3 +1,8 @@
+## [1.2.0] - 2020-04-02
+
+### New
+- Renamed package to Time Scale Tool
+
 ## [1.1.1] - 2020-04-02
 
 ### Fix

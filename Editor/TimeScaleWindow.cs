@@ -2,18 +2,18 @@
 using UnityEditor;
 using System;
 
-namespace BrightLib.PlaySpeedTool
+namespace BrightLib.TimeScale
 {
-    public class PlaySpeedWindow : EditorWindow
+    public class TimeScaleWindow : EditorWindow
     {
         public Action<float> onChangeClick;
         public Action<float> onResetClick;
 
-        private PlaySpeedController _controller;
+        private TimeScaleController _controller;
 
         private void OnEnable()
         {
-            _controller = new PlaySpeedController();
+            _controller = new TimeScaleController();
             onChangeClick = _controller.ChangeTimeScale;
             onResetClick = _controller.SetTimeScale;
         }

@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace BrightLib.PlaySpeedTool
+namespace BrightLib.TimeScale
 {
-    public class PlaySpeedController
+    public class TimeScaleController
     {
-        private const string WINDOW_TITLE = "Play Speed";
-        private const bool WINDOW_UTILITY = false;
+        private const string _kWindowTitle = "Time Scale";
+        private const bool _kIsUtilityWindow = false;
 
-        [MenuItem("Tools/" + WINDOW_TITLE)]
+        [MenuItem("Tools/" + _kWindowTitle)]
         public static void ShowWindow()
         {
-            EditorWindow.GetWindow<PlaySpeedWindow>(WINDOW_UTILITY, WINDOW_TITLE);
+            EditorWindow.GetWindow<TimeScaleWindow>(_kIsUtilityWindow, _kWindowTitle);
         }
 
         public  void ChangeTimeScale(float timeScaleDiff)
