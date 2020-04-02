@@ -1,13 +1,13 @@
 ## [1.1.1] - 2020-04-02
 
 ### Fix
-- Small tweak to buttons disable behaviour
+- Small tweak to buttons disable behaviour.
 
 ## [1.1.0] - 2020-03-30
 
 ### New
-- Separated controller and view
-- Changed from 'PLAY icon' to '1'
+- Separated controller and view.
+- Changed from 'PLAY icon' to '1'.
 
 ## [1.0.2] - 2020-02-22
 
@@ -22,4 +22,4 @@
 ## [1.0.0] -
 
 ### New
-First version of the tool
+- First version of the tool.
