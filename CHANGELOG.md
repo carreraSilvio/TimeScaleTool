@@ -1,9 +1,15 @@
+## [1.3.0] - 2020-04-05
+
+### New
+- Added option to alter time scale directly
+- Buttons resizing based on window size
+
 ## [1.2.0] - 2020-04-02
 
 ### New
 - Renamed package to Time Scale Tool
 
-## [1.1.1] - 2020-04-02
+## [1.1.1] - 2020-04-01
 
 ### Fix
 - Small tweak to buttons disable behaviour.

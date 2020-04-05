@@ -24,23 +24,30 @@ namespace BrightLib.TimeScale
             onResetClick = null;
         }
 
-
         private void OnGUI()
         {
             StartGreyedOutArea(Application.isPlaying);
 
             EditorGUILayout.BeginVertical();
             {
-                DrawLabelBold($"Time Scale is : {Time.timeScale.ToString("0.00")}");
+                _controller.SetTimeScale(EditorGUILayout.FloatField("Time Scale", Time.timeScale));
+                //DrawLabelBold($"Time Scale is : {Time.timeScale.ToString("0.00")}");
                 EditorGUILayout.BeginHorizontal();
                 {
-                    if (DrawButton("<<", width: 25f)) onChangeClick.Invoke(-0.25f);
-                    if (DrawButton("<", width: 25f)) onChangeClick.Invoke(-0.1f);
+                    if (DrawButton("<<", GUILayout.MinWidth(25f))) onChangeClick.Invoke(-0.25f);
+                    if (DrawButton("<", GUILayout.MinWidth(25f))) onChangeClick.Invoke(-0.1f);
+
+                    if (DrawButton("1", GUILayout.MinWidth(40f))) onResetClick.Invoke(1f);
+
+                    if (DrawButton(">", GUILayout.MinWidth(25f))) onChangeClick.Invoke(+0.1f);
+                    if (DrawButton(">>", GUILayout.MinWidth(25f))) onChangeClick.Invoke(+0.25f);
+
+                    //if (DrawButton("<", width: 25f)) onChangeClick.Invoke(-0.1f);
                    
-                    if (DrawButton("1", width: 40f)) onResetClick.Invoke(1f);
+                    //if (DrawButton("1", width: 40f)) onResetClick.Invoke(1f);
                     
-                    if (DrawButton(">", width: 25f)) onChangeClick.Invoke(+0.1f);
-                    if (DrawButton(">>", width: 25f)) onChangeClick.Invoke(+0.25f);
+                    //if (DrawButton(">", width: 25f)) onChangeClick.Invoke(+0.1f);
+                    //if (DrawButton(">>", width: 25f)) onChangeClick.Invoke(+0.25f);
                 }
                 EditorGUILayout.EndHorizontal();
             }
@@ -86,6 +93,8 @@ namespace BrightLib.TimeScale
         {
             GUI.enabled = true;
         }
+
+        
     }
 }
 

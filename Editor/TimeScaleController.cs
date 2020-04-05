@@ -11,10 +11,12 @@ namespace BrightLib.TimeScale
         [MenuItem("Tools/" + _kWindowTitle)]
         public static void ShowWindow()
         {
-            EditorWindow.GetWindow<TimeScaleWindow>(_kIsUtilityWindow, _kWindowTitle);
+            var wnd = EditorWindow.GetWindow<TimeScaleWindow>(_kIsUtilityWindow, _kWindowTitle);
+            wnd.maxSize = new Vector2(360f,300f);
+            wnd.Show();
         }
 
-        public  void ChangeTimeScale(float timeScaleDiff)
+        public void ChangeTimeScale(float timeScaleDiff)
         {
             var timeScale = Time.timeScale;
             timeScale += timeScaleDiff;
@@ -24,6 +26,8 @@ namespace BrightLib.TimeScale
 
         public void SetTimeScale(float timeScale)
         {
+            if (timeScale < 0) return;
+
             Time.timeScale = timeScale;
         }
     }
