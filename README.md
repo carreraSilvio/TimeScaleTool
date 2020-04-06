@@ -1,7 +1,9 @@
 # Time Scale Tool
 Alter the time scale of your game. 
 
-![Imgur](https://i.imgur.com/1DMzWrV.gif)
+![Imgur](https://i.imgur.com/O1mAyn8.gif)
+
+![Imgur](https://i.imgur.com/wsPz6V0.gif)
 
 ## Prerequisites
 Unity 2018.3 and up
